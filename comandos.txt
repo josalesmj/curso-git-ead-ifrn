@@ -1,0 +1,17 @@
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead.git
+touch texto.txt
+git add texto.txt
+git commit -m "Commit do arquivo texto.txt"
+git checkout -b feature-1
+git add texto.txt
+git checkout main
+git add texto.txt
+git commit -m "Novo commit na branch main"
+git merge feature-1
+git add texto.txt
+git commit -m "Resolucao do conflito"
+git checkout -b add-comandos
+touch comandos.txt
+git remote add origin-atividade https://github.com/josalesmj/curso-git-ead-ifrn.git
+git add .
+git commit -m "Adiciona para repositório remoto"
